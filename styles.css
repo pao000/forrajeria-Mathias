@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .....................nav........ */
+.menu {
+    background-color: #FCF0ED;
+    padding: 1px 0;
+    text-align: left;
+    height: 70px;
+    margin: 0px;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #FF5403;
+    font-size: 15px;
+    display: block;
+    padding: 20px 30px;
+    /* text-shadow: -0.5px -0.5px 1px hsl(0, 0%, 100%); */
+}
+
+.menu ul li a:hover {
+    color: rgb(188, 0, 110);
+}
+
+.contacto {
+    float: right;
+}
+
+/* .....................fin nav........ */
+
+/* .....................portada home.. */
+
+.encabezado-imagen {
+    background: linear-gradient(rgba(1, 1, 2, 0.6), rgba(1, 1, 2, 0.6)),
+        url(images/h/h.adentro.zoom.jpg) no-repeat center center fixed;
+    font-family: 'Sancreek', cursive;
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+    text-shadow: -3px -3px 5px rgb(255, 255, 255);
+}
+
+
+.encabezado-imagen h1 {
+    font-size: 90px;
+    color: #FF5403;
+    padding: 20px;
+    letter-spacing: 70px;
+}
+/* ....................fin portada home.. */
+
+/* .........................main.................... */
+.contenedor {
+    display: block;
+    margin: 0px;
+    background-color: #FF5403;
+    padding: 0px;
+}
+
+.espacio-descanso {
+    background-color: #FCF0ED;
+    height: 300px;
+}
+
+.card-group {
+    height: 30em;
+    width: 100%;
+}
+
+.card {
+    padding: 10px;
+    margin: 30px;
+}
+
+.card-body {
+    background-color: hsl(233, 97%, 45%);
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-title {
+    color: #FCF0ED;
+    text-align: center;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.marcas {
+    padding: 40px;
+    background-color: #FCF0ED;
+    font-size: 40px;
+    text-align: center;
+    height: 550px;
+}
+
+.marcas h1 {
+    padding-bottom: 40px;
+}
+
+.contenedor-imagenes {
+    display: block;
+    
+}
+
+.Productos {
+    text-align: center;
+    color: white;
+    background-color: #FF5403;
+    padding: 40px;
+    border: 20px;
+    height: 650px;
+    /* padding: 10px; esto es el borde de abajo naranja de la tarjetas */
+}
+
+.Productos-1 {
+    text-align: center;
+    color: white;
+    background-color: #FF5403;
+    padding: 40px;
+    height: 650px;
+}
+
+.algo {
+    padding: 40px;
+    background-color: #FCF0ED;
+    font-size: 40px;
+    text-align: center;
+    height: 550px;
+}
+
+.final {
+    text-align: center;
+    height: 300px;
+}
+
+
+/* empieza footer */
+
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+}
+
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+}
+
+.fa-phone:before {
+    content: "\f095";
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+.fas {
+    font-weight: 900;
+}
+
+.social-media {
+    display: block;
+    width: 100%;
+    margin: 0.1rem 0;
+    padding-bottom: 1rem;
+}
+
+.social-media a {
+    font-size: 2em;
+    display: inline-block;
+    padding: 10px;
+}
+
+.pie {
+    display: inline-block;
+    height: 100px;
+    text-align: center;
+    font-size: 2em;
+    color: #FF5403;
+    font-family: 'Sancreek', cursive;
+    padding: 20px;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+
+.col-md-6 {
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+li {
+    font-size: 1.1rem;
+    font-family: 'Foco Lite', 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mapa-box {
+    height: 20rem;
+    padding: 0;
+    background-color: #FCF0ED;
+}
+
+.mapa {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* si saco el 100% aparece scroll horizontal */
+
+.mapa .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 97%, 45%);
+    color: hsl(194, 70%, 40%);
+}
+
+.mapa li {
+    font-size: 1.2rem;
+    color: white;
+    list-style: none;
+}
