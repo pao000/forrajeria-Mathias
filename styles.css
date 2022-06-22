@@ -2,11 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: solid 1px black; 
 }
 
+/* esto de abajo es solo para reconocer cajas */
+
+/* div {
+    border: 1.5px solid black;
+} */
+
 /* .....................nav........ */
+
+
 .menu {
-    background-color: #FCF0ED;
+    background-color: #efe9e8;
     padding: 1px 0;
     text-align: left;
     height: 70px;
@@ -19,7 +28,7 @@
 
 .menu ul li a {
     text-decoration: none;
-    color: #FF5403;
+    color: #FA9401;
     font-size: 15px;
     display: block;
     padding: 20px 30px;
@@ -55,18 +64,21 @@
 
 .encabezado-imagen h1 {
     font-size: 90px;
-    color: #FF5403;
+    color: #FA9401;
     padding: 20px;
     letter-spacing: 70px;
 }
+
 /* ....................fin portada home.. */
 
 /* .........................main.................... */
 .contenedor {
     display: block;
-    margin: 0px;
-    background-color: #FF5403;
-    padding: 0px;
+}
+
+.contenedor-imagenes img {
+    display: inline-block;
+    padding: 5px 5px;
 }
 
 .espacio-descanso {
@@ -75,23 +87,24 @@
 }
 
 .card-group {
-    height: 30em;
+    height: auto;
     width: 100%;
 }
 
+
+/* el padding es el boirde las tarjeta lpm */
 .card {
-    padding: 10px;
+    padding: 2px;
     margin: 30px;
 }
 
 .card-body {
-    background-color: hsl(233, 97%, 45%);
-    padding: 0px;
-    margin: 0px;
+    background-color: #ffffff;
+    padding: 10px;
 }
 
 .card-title {
-    color: #FCF0ED;
+    color: #000000;
     text-align: center;
 }
 
@@ -100,38 +113,33 @@
 }
 
 .marcas {
-    padding: 40px;
+    padding: 10px;
     background-color: #FCF0ED;
-    font-size: 40px;
     text-align: center;
     height: 550px;
+    font-size: 30px;
 }
 
 .marcas h1 {
-    padding-bottom: 40px;
+    padding: 40px;
 }
 
-.contenedor-imagenes {
-    display: block;
-    
+
+.Productos-1 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to bottom right, #ffffff, #ed7700, #fa5401);
+    padding: 40px;
+    height: 650px;
 }
 
 .Productos {
     text-align: center;
-    color: white;
-    background-color: #FF5403;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to bottom right, #ffffff, #ed7700, #fa5401);
     padding: 40px;
-    border: 20px;
     height: 650px;
     /* padding: 10px; esto es el borde de abajo naranja de la tarjetas */
-}
-
-.Productos-1 {
-    text-align: center;
-    color: white;
-    background-color: #FF5403;
-    padding: 40px;
-    height: 650px;
 }
 
 .algo {
@@ -140,11 +148,6 @@
     font-size: 40px;
     text-align: center;
     height: 550px;
-}
-
-.final {
-    text-align: center;
-    height: 300px;
 }
 
 
@@ -180,81 +183,550 @@
     font-weight: 900;
 }
 
-.social-media {
-    display: block;
+
+
+
+/* aca lado derecho azul */
+
+.ubicacion {
+    display: flex;
+    height: 300px;
     width: 100%;
-    margin: 0.1rem 0;
-    padding-bottom: 1rem;
-}
-
-.social-media a {
-    font-size: 2em;
-    display: inline-block;
-    padding: 10px;
-}
-
-.pie {
-    display: inline-block;
-    height: 100px;
-    text-align: center;
-    font-size: 2em;
-    color: #FF5403;
-    font-family: 'Sancreek', cursive;
-    padding: 20px;
-}
-
-ul {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-.small {
-    font-size: 80%;
-    font-weight: 400;
-}
-
-
-.col-md-6 {
-    position: relative;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-li {
-    font-size: 1.1rem;
-    font-family: 'Foco Lite', 'Open Sans', sans-serif;
-    margin: 0;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-}
-
-.mapa-box {
-    height: 20rem;
-    padding: 0;
-    background-color: #FCF0ED;
 }
 
 .mapa {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    height: 295px;
+    width: 50%;
 }
 
 /* si saco el 100% aparece scroll horizontal */
 
-.mapa .info {
+.info {
     display: flex;
+    height: 300px;
+    width: 50%;
     justify-content: center;
     align-items: center;
-    background-color: hsl(233, 97%, 45%);
-    color: hsl(194, 70%, 40%);
+    background-color: #0A68FF;
+    color: hsl(0, 0%, 100%);
 }
 
-.mapa li {
-    font-size: 1.2rem;
+
+li {
+    font-size: 1.5rem;
     color: white;
+    font-family: 'Foco Lite', 'Open Sans', sans-serif;
+    margin: 0;
     list-style: none;
+}
+
+
+
+
+/* SOCIAL MEDIAS */
+
+
+.social-media {
+    display: block;
+    width: 100%;
+}
+
+.social-media a {
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 15px;
+}
+
+
+.pie {
+    display: inline-block;
+    height: 80px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #FA9401;
+    font-family: 'Sancreek', cursive;
+    padding: 2px;
+}
+
+.pie p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+
+}
+
+/* WhatsApp Button */
+
+.qlwapp-toggle {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 9px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.30em;
+}
+
+/* WhatsApp Button */
+
+/* SOCIAL MEDIAS */
+
+@media (min-width: 320px) and (max-width: 576px){
+
+    .encabezado {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: row;
+        height: auto;
+        text-align: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu ul li a {
+        flex-direction: row;
+        padding: 2px;
+    }
+
+
+    .encabezado-imagen {
+        display: flex;
+        font-size: 10px;
+        height: 250px;
+    }
+
+    .encabezado-imagen h1 {
+        font-size: 35px;
+        color: #FA9401;
+        padding: 20px;
+        letter-spacing: 15px;
+    }
+
+    .marcas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+        width: auto;
+    }
+
+    .marcas h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .contenedor-imagenes p img {
+        text-align: flex;
+        height: 80px;
+        width: 80px;
+    }
+
+    .Productos-1 {
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .Productos-1 h1{
+        font-size: 20px;
+    }
+
+    .Productos{
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+    .Productos h1{
+        font-size: 20px;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card{
+        margin: 0;
+        align-items: center;
+    }
+
+    .card img {
+        width: 100px;
+    }
+
+
+    .card-body {
+        width: 100px;
+        padding: 1px;
+        justify-content: center;
+    }
+
+    .card img{
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
+    }
+
+    .card-text{
+        font-size: 10px;
+    }
+
+    .card .card-title{
+        font-size: 10px;
+    }
+
+    .algo{
+        height: 300px;
+    }
+
+    .algo h1{
+        font-size: 20px;
+        height: 200px;
+    }
+
+    .ubicacion {
+        display: block;
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+    .social-media {
+        display: flex;
+        padding: 1px;
+        justify-content: center;
+    }
+
+    .ubicacion {
+        display: flex;
+        position: relative;
+        width: 100%;
+        flex-direction: row;
+        text-align: center;
+        height: auto;
+    }
+
+    .mapa {
+        display: flex;
+    }
+
+
+    .social-media {
+        display: flex;
+        padding: 1px;
+        justify-content: center;
+    }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+
+    .encabezado {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: row;
+        height: auto;
+        text-align: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu ul li a {
+        flex-direction: row;
+        padding: 2px;
+    }
+
+
+    .encabezado-imagen {
+        display: flex;
+        font-size: 10px;
+        height: 250px;
+    }
+
+    .encabezado-imagen h1 {
+        font-size: 35px;
+        color: #FA9401;
+        padding: 20px;
+        letter-spacing: 10px;
+    }
+
+    .marcas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+        width: auto;
+    }
+
+    .marcas h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .contenedor-imagenes p img {
+        text-align: flex;
+        height: 80px;
+        width: 80px;
+    }
+
+    .Productos-1 {
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .Productos-1 h1{
+        font-size: 20px;
+    }
+
+    .Productos{
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+    .Productos h1{
+        font-size: 20px;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card{
+        margin: 0;
+        align-items: center;
+        
+    }
+
+    .card img {
+        width: 100px;
+    }
+
+
+    .card-body {
+        width: 100px;
+        padding: 1px;
+        justify-content: center;
+    }
+
+    .card img{
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
+    }
+
+    .card-text{
+        font-size: 10px;
+    }
+
+    .card .card-title{
+        font-size: 10px;
+    }
+
+    .algo{
+        height: 300px;
+    }
+
+    .algo h1{
+        font-size: 20px;
+        height: 200px;
+    }
+
+    .ubicacion {
+        display: flex;
+        position: relative;
+        width: 100%;
+        flex-direction: row;
+        text-align: center;
+        height: auto;
+    }
+
+    .mapa {
+        display: flex;
+    }
+
+
+    .social-media {
+        display: flex;
+        padding: 1px;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+
+    .encabezado {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: row;
+        height: auto;
+        text-align: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu ul li a {
+        flex-direction: row;
+        padding: 2px;
+    }
+
+
+    .encabezado-imagen {
+        display: flex;
+        font-size: 10px;
+        height: 250px;
+    }
+
+    .encabezado-imagen h1 {
+        font-size: 35px;
+        color: #FA9401;
+        padding: 20px;
+        letter-spacing: 5px;
+    }
+
+    .marcas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: auto;
+        width: auto;
+    }
+
+    .marcas h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .contenedor-imagenes p img {
+        text-align: flex;
+        height: 80px;
+        width: 80px;
+    }
+
+    .Productos-1 {
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .Productos-1 h1{
+        font-size: 20px;
+    }
+
+    .Productos{
+        display: block;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+    .Productos h1{
+        font-size: 20px;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card{
+        margin: 0;
+        align-items: center;
+    }
+
+    .card img {
+        width: 100px;
+    }
+
+
+    .card-body {
+        width: 100px;
+        padding: 1px;
+        justify-content: center;
+    }
+
+    .card img{
+        justify-content: center;
+        align-items: center;
+        padding: 1px;
+    }
+
+    .card-text{
+        font-size: 10px;
+    }
+
+    .card .card-title{
+        font-size: 10px;
+    }
+
+    .algo{
+        height: 300px;
+    }
+
+    .algo h1{
+        font-size: 20px;
+        height: 200px;
+    }
+
+    .ubicacion {
+        display: flex;
+        position: relative;
+        width: 100%;
+        flex-direction: row;
+        text-align: center;
+        height: auto;
+    }
+
+    .mapa {
+        display: flex;
+    }
+
+
+    .social-media {
+        display: flex;
+        padding: 1px;
+        justify-content: center;
+    }
+
 }
