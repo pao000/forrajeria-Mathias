@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: solid 1px black;  */
+}
+
+/* revisar min-height */
+body {
+    min-height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.menu {
+    background-color: #FCF0ED;
+    padding: 1px 0;
+    text-align: left;
+    height: 70px;
+    margin: 0px;
+}
+
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #FF5403;
+    font-size: 15px;
+    display: block;
+    padding: 20px 30px;
+    /* text-shadow: -0.5px -0.5px 1px hsl(0, 0%, 100%); */
+}
+
+.menu ul li a:hover {
+    color: rgb(188, 0, 110);
+}
+
+.contacto {
+    float: right;
+}
+
+.carrusel {
+    height: 27vh;
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+}
+
+.carrusel-items {
+    background-color: #FA9401;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 10px 0px;
+}
+
+.carrusel-item {
+    min-width: 300px;
+    max-width: 300px;
+    height: 200px;
+    outline: 2px solid #FA9401;
+    cursor: pointer;
+
+}
+
+.carrusel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrusel-item:hover {
+    transform: scale(1.2);
+}
+
+.Productos-t {
+    height: 150px;
+    display: block;
+    padding: 30px;
+}
+
+.h1 {
+    height: auto;
+    display: flex;
+
+}
+
+.col{
+    padding: 30px;
+}
+.card {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+}
+
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+}
+
+.fa-phone:before {
+    content: "\f095";
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+.fas {
+    font-weight: 900;
+}
+
+.final {
+    background: linear-gradient(to bottom right, #ffffff, #ed7700, #fa5401);
+    display: block;
+    text-align: center;
+    height: auto;
+}
+
+.social-media {
+    display: block;
+    width: 100%;
+}
+
+.social-media a {
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 15px;
+}
+
+
+.pie {
+    display: inline-block;
+    height: 80px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #FA9401;
+    font-family: 'Sancreek', cursive;
+    padding: 2px;
+}
+
+.pie p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+
+}
+
+/* WhatsApp Button */
+
+.qlwapp-toggle {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 9px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+}
+
+
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.30em;
+}
+
+/* WhatsApp Button */
+
+/* SOCIAL MEDIAS */
+
+@media (min-width: 320px) and (max-width: 576px) {
+
+    .encabezado {
+        position: relative;
+        width: 100%;
+    }
+
+    .menu {
+        flex-direction: row;
+        height: auto;
+        text-align: center;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .menu ul li a {
+        flex-direction: row;
+        padding: 2px;
+    }
+
+    .final {
+        display: block;
+    }
+
+
+    .row-cols-1 row-cols-md-2 g-4 {
+        display: flex;
+        text-align: flex;
+        height: 80px;
+        width: 80px;
+    }
+
+    */ .social-media {
+        display: flex;
+        padding: 1px;
+        justify-content: center;
+    }
+
+    .social-media {
+        display: flex;
+        padding: 1px;
+        justify-content: center;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .info ul li {
+        font-size: 20px;
+    }
+
+}
