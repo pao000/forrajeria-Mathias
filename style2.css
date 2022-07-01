@@ -59,19 +59,36 @@
     flex-wrap: wrap;
     width: 100%;
     margin: auto;
-    padding: 20px;
+    padding: 5px;
 }
 
 .card {
-    width: 250px;
     margin: 1rem;
+    padding: 0.1em;
 }
+
+.card {
+    padding: 2px;
+    margin: 30px;
+    box-shadow: 0px 2px 10px rgba(1, 1, 2, 1);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgb(255, 183, 1);
+    transform: translateY(-3%);
+}
+
 
 .card-img-top {
     border-style: solid;
     border-color: #FCF0ED;
     border-width: 6px;
 }
+
+
+
 
 footer .social-media {
     width: 100%;

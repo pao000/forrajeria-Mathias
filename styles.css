@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: solid 1px black; */
+    /* border: solid 1px black;  */
 }
 
 /* esto de abajo es solo para reconocer cajas */
@@ -28,7 +28,8 @@
 
 .menu ul li a {
     text-decoration: none;
-    color: #FF5403;;
+    color: #FF5403;
+    ;
     font-size: 15px;
     display: block;
     padding: 20px 30px;
@@ -46,6 +47,41 @@
 /* .....................fin nav........ */
 
 /* .....................portada home.. */
+
+
+.animate-bg {
+    position: relative;
+    margin: 0px;
+    width: 100%;
+    height: 0.01em;
+}
+
+.animate-bg:after {
+    content: '';
+    position:absolute;
+    left: -10px;
+    top: -10px;
+    background: linear-gradient(120deg, #fb661b, #f80d19, #ecab07, rgb(255, 21, 150), rgb(183, 0, 255) );
+    background-size: 300%;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    animation: BGgradient 9s ease infinite;
+}
+
+@keyframes BGgradient {
+    0% {
+        background-position: 0% 200%;
+    }
+
+    50% {
+        background-position: 200% 0%;
+    }
+
+    100% {
+        background-position: 0% 330%;
+    }
+}
+
 
 .encabezado-imagen {
     background: linear-gradient(rgba(1, 1, 2, 0.6), rgba(1, 1, 2, 0.6)),
@@ -89,11 +125,10 @@
 .card-group {
     height: auto;
     width: 100%;
-
 }
 
 
-/* el padding es el boirde las tarjeta lpm */
+/* el padding es el borde las tarjeta lpm */
 .card {
     padding: 2px;
     margin: 30px;
@@ -159,7 +194,8 @@
     height: 500px;
 }
 
-ol, ul {
+ol,
+ul {
     padding-left: 0;
 }
 
@@ -328,7 +364,7 @@ li {
     }
 
     .encabezado-imagen h1 {
-        font-size: 35px;
+        font-size: 27px;
         color: #FA9401;
         padding: 20px;
         letter-spacing: 15px;
